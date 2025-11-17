@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <nav class="flex justify-between items-center p-6 bg-white shadow">
+    <h1 class="text-2xl font-bold">MyPortfolio</h1>
+    <div class="space-x-6 hidden md:block">
+      <a href="#home" class="hover:text-blue-500">Home</a>
+      <a href="#about" class="hover:text-blue-500">About</a>
+      <a href="#projects" class="hover:text-blue-500">Projects</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center p-6">
+    <img src="{{ url_for('static', filename='IMG_1510.jpg') }}" alt="foto Profil" class="w-40 h-40 rounded-full object-cover shadow-lg mb-6">
+    <h2 class="text-4xl md:text-6xl font-extrabold mb-4">
+      Halo, Saya <span class="text-blue-600">Faik Setyawan</span>
+    </h2>
+    <p class="text-lg md:text-xl max-w-2xl">
+      Mahasiswa | Anak Baik | Python
+    </p>
+  </section>
+
+  <section id="about" class="py-20 bg-white px-6">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-6">About Me</h3>
+      <div class="text-lg leading-relaxed text-left space-y-4">
+        <p>
+          Saya adalah <b>Faik Setyawan</b>, seorang mahasiswa Universitas Putra Bangsa yang suka ngoding dan eksplorasi teknologi.
+        </p>
+        <p>
+          Selain itu, aku juga punya ketertarikan dalam servis elektronik — seperti puzzle yang menunggu untuk diselesaikan.
+        </p>
+        <p>
+          Saat ini aku sedang menjalani kuliah sambil terus mengasah kemampuan. Tujuanku sederhana: berkembang dan bermanfaat.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">My Tugas</h3>
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl shadow p-6 hover:scale-105 transition">
+          <img src="{{ url_for('static', filename='48f7d03b-48c4-480b-b137-338293f729f1.jpg') }}" class="h-40 w-full object-cover rounded mb-4">
+          <h4 class="font-bold text-xl mb-2">Project 1</h4>
+          <p class="text-sm text-gray-600">Deskripsi singkat proyek.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6 hover:scale-105 transition">
+          <img src="{{ url_for('static', filename='IMG_1489.JPEG') }}" class="h-40 w-full object-cover rounded mb-4">
+          <h4 class="font-bold text-xl mb-2">Project 2</h4>
+          <p class="text-sm text-gray-600">Deskripsi singkat proyek.</p>
+        </div>
+        <div class="bg-white rounded-2xl shadow p-6 hover:scale-105 transition">
+          <img src="{{ url_for('static', filename='IMG_1619.JPEG') }}" class="h-40 w-full object-cover rounded mb-4">
+          <h4 class="font-bold text-xl mb-2">Project 3</h4>
+          <p class="text-sm text-gray-600">Deskripsi singkat proyek.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 px-6">
+    <div class="max-w-3xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
+      <p class="mb-4 text-gray-700"><b>No HP:</b> 082224084893</p>
+      <p class="mb-8 text-gray-700"><b>Email:</b> faiksetyawan002@gmail.com</p>
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-gray-600">© 2025 Faik Setyawan. All Rights Reserved.</footer>
+</body>
+</html>
